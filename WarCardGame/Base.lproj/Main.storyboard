@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WarCardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="259" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="XDb-zE-1aV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="BJv-ye-afP">
+                                <rect key="frame" x="146" y="84" width="122" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ngE-bd-AzB"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ngE-bd-AzB"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ngE-bd-AzB"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="793-zG-TPv" userLabel="Cards and button">
+                                <rect key="frame" x="72" y="347.5" width="270" height="241"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="TuH-br-4xY" userLabel="Cards">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="170"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card0" translatesAutoresizingMaskIntoConstraints="NO" id="W11-Q0-S0z">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="D56-hY-JNk"/>
+                                                    <constraint firstAttribute="width" constant="150" id="eux-za-1oq"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="D56-hY-JNk"/>
+                                                        <exclude reference="eux-za-1oq"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="D56-hY-JNk"/>
+                                                        <include reference="eux-za-1oq"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card0" translatesAutoresizingMaskIntoConstraints="NO" id="SdK-hl-TAo">
+                                                <rect key="frame" x="150" y="0.0" width="120" height="170"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="07B-fr-t5q"/>
+                                                    <constraint firstAttribute="width" constant="150" id="0iF-Ub-yUA"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="J99-vx-1j7"/>
+                                                    <constraint firstAttribute="height" constant="170" id="TE1-Du-oFM"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="kg6-od-oJN"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="lcH-mp-xqZ"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="07B-fr-t5q"/>
+                                                        <exclude reference="0iF-Ub-yUA"/>
+                                                        <exclude reference="J99-vx-1j7"/>
+                                                        <exclude reference="TE1-Du-oFM"/>
+                                                        <exclude reference="kg6-od-oJN"/>
+                                                        <exclude reference="lcH-mp-xqZ"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="heightClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="07B-fr-t5q"/>
+                                                        <include reference="0iF-Ub-yUA"/>
+                                                        <include reference="J99-vx-1j7"/>
+                                                        <include reference="TE1-Du-oFM"/>
+                                                        <include reference="kg6-od-oJN"/>
+                                                        <include reference="lcH-mp-xqZ"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHI-x5-sNT">
+                                        <rect key="frame" x="0.0" y="210" width="270" height="31"/>
+                                        <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="270" id="25v-lV-y0m"/>
+                                            <constraint firstAttribute="height" constant="31" id="hCB-zt-EZl"/>
+                                        </constraints>
+                                        <state key="normal" image="dealbutton"/>
+                                        <connections>
+                                            <action selector="dealTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xqw-rN-pb3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="SXb-i2-wkq" userLabel="Player score">
+                                <rect key="frame" x="20" y="773.5" width="51.5" height="68.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpr-Iq-58e">
+                                        <rect key="frame" x="0.0" y="0.0" width="51.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6n-1Y-BXa">
+                                        <rect key="frame" x="0.0" y="20.5" width="25" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="qTO-jR-jf6">
+                                <rect key="frame" x="357" y="773.5" width="37" height="68.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u37-vW-VNk">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLw-0v-gqB">
+                                        <rect key="frame" x="12" y="20.5" width="25" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BJv-ye-afP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="8Tt-8C-lPX"/>
+                            <constraint firstItem="XDb-zE-1aV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="BqK-xB-VCE"/>
+                            <constraint firstItem="793-zG-TPv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="Czm-Rv-tIa">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qTO-jR-jf6" secondAttribute="bottom" constant="20" id="Gth-NR-yhk"/>
+                            <constraint firstAttribute="trailing" secondItem="XDb-zE-1aV" secondAttribute="trailing" id="Pjm-NY-Xl4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SXb-i2-wkq" secondAttribute="bottom" constant="20" id="TQS-LO-P0z"/>
+                            <constraint firstItem="BJv-ye-afP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YDk-Ow-Gwx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qTO-jR-jf6" secondAttribute="trailing" constant="20" id="YiT-FO-rFR"/>
+                            <constraint firstItem="BJv-ye-afP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="a5Y-2R-JsO"/>
+                            <constraint firstItem="793-zG-TPv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="edH-57-nBa"/>
+                            <constraint firstItem="SXb-i2-wkq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k1P-3A-TFo"/>
+                            <constraint firstAttribute="bottom" secondItem="XDb-zE-1aV" secondAttribute="bottom" id="rli-fh-0s5"/>
+                            <constraint firstItem="XDb-zE-1aV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zpX-Om-RAk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="a5Y-2R-JsO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="a5Y-2R-JsO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="leftCard" destination="W11-Q0-S0z" id="a7q-6K-0eG"/>
+                        <outlet property="leftScore" destination="p6n-1Y-BXa" id="dgA-zW-iuZ"/>
+                        <outlet property="rightCard" destination="SdK-hl-TAo" id="MAs-Zh-fBf"/>
+                        <outlet property="rightScore" destination="WLw-0v-gqB" id="idd-HG-0gj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="414" height="896"/>
+        <image name="card0" width="120" height="170"/>
+        <image name="dealbutton" width="82" height="31"/>
+        <image name="logo" width="122" height="67"/>
+    </resources>
+</document>
